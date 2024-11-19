@@ -23,7 +23,8 @@ from rest_framework_simplejwt.views import (
 )
 from users.views import UserRegisterView
 from users.views import LogoutView
-from students.views import StudentsAPIView
+from students.views import StudentsAPIView, StudentProfileAPIView
+from courses.views import CoursesAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,5 +35,8 @@ urlpatterns = [
     path('api/logout/', LogoutView.as_view(), name='logout'),
 
     path('api/students/', StudentsAPIView.as_view(), name='students'),
+    path('api/student/profile/', StudentProfileAPIView.as_view(), name='student_profile'),
+
+    path('api/courses/', CoursesAPIView.as_view(), name='student_profile'),
 ]
 

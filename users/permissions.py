@@ -11,3 +11,13 @@ class IsStudent(BasePermission):
 class IsTeacher(BasePermission):
     def has_permission(self, request, view):
         return request.user.role == 'teacher'
+    
+class IsTeacherOrAdmin(BasePermission):
+    def has_permission(self, request, view):
+        # Разрешить доступ, если пользователь является преподавателем или администратором
+        return request.user.role in ['teacher', 'admin']
+    
+class IsStudentOrAdmin(BasePermission):
+    def has_permission(self, request, view):
+        # Разрешить доступ, если пользователь является преподавателем или администратором
+        return request.user.role in ['student', 'admin']

@@ -11,3 +11,23 @@ class StudentsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         fields = ('username', 'email', 'first_name', 'last_name', 'description')
+
+    def update(self, instance, validated_data):
+        # Извлекаем данные для связанных объектов
+        student_data = validated_data.pop('student', {})
+
+        # Обновляем объект Student
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+
+        # Обновляем связанные данные пользователя
+        if student_data:
+            user_instance = instance.student
+            for attr, value in student_data.items():
+                setattr(user_instance, attr, value)
+            user_instance.save()
+
+        return instance
+
+        
