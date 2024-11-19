@@ -23,6 +23,7 @@ from rest_framework_simplejwt.views import (
 )
 from users.views import UserRegisterView
 from users.views import LogoutView
+from students.views import StudentsAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +32,7 @@ urlpatterns = [
     path('api/login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/login/verify/', TokenVerifyView.as_view(), name='token_verify'),
     path('api/logout/', LogoutView.as_view(), name='logout'),
+
+    path('api/students/', StudentsAPIView.as_view(), name='students'),
 ]
 

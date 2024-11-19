@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Student  # Замените на вашу модель
 
-# Register your models here.
+admin.site.register(Student)
