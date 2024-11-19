@@ -24,19 +24,27 @@ from rest_framework_simplejwt.views import (
 from users.views import UserRegisterView
 from users.views import LogoutView
 from students.views import StudentsAPIView, StudentProfileAPIView
-from courses.views import CoursesAPIView
+from courses.views import CoursesAPIView, CoursesAPIViewEdit, CoursesAPIViewEnroll
+from grades.views import GradesAPIView, GradesAPIViewPost, GradesAPIViewUpdate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/register', UserRegisterView.as_view(), name='register'),
+    path('api/register/', UserRegisterView.as_view(), name='register'),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/login/verify/', TokenVerifyView.as_view(), name='token_verify'),
     path('api/logout/', LogoutView.as_view(), name='logout'),
 
-    path('api/students/', StudentsAPIView.as_view(), name='students'),
+    path('api/students/', StudentsAPIView.as_view(), name='students_list'),
     path('api/student/profile/', StudentProfileAPIView.as_view(), name='student_profile'),
 
-    path('api/courses/', CoursesAPIView.as_view(), name='student_profile'),
+    path('api/courses/', CoursesAPIView.as_view(), name='courses_list'),
+    path('api/courses/add/', CoursesAPIViewEdit.as_view(), name='courses_add'),
+    path('api/courses/edit/<int:course_id>/', CoursesAPIViewEdit.as_view(), name='courses_edit'),
+    path('api/courses/enrollment/', CoursesAPIViewEnroll.as_view(), name='courses_enroll'),
+
+    path('api/grades/<int:course_id>/', GradesAPIView.as_view(), name='grades'),
+    path('api/grades/', GradesAPIViewPost.as_view(), name='grades-post'),
+    path('api/grades/update/course/<int:course_id>/student/<int:student_id>/', GradesAPIViewUpdate.as_view(), name='grades_update'),
 ]
 
