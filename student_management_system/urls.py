@@ -23,9 +23,10 @@ from rest_framework_simplejwt.views import (
 )
 from users.views import UserRegisterView
 from users.views import LogoutView
-from students.views import StudentsAPIView, StudentProfileAPIView
+from students.views import StudentsAPIView, StudentProfileAPIView, StudentDetailView
 from courses.views import CoursesAPIView, CoursesAPIViewEdit, CoursesAPIViewEnroll
 from grades.views import GradesAPIView, GradesAPIViewPost, GradesAPIViewUpdate
+from attendance.views import AttendanceAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,6 +37,11 @@ urlpatterns = [
     path('api/logout/', LogoutView.as_view(), name='logout'),
 
     path('api/students/', StudentsAPIView.as_view(), name='students_list'),
+
+
+    path('api/students/<int:pk>/', StudentDetailView.as_view(), name='student-detail'),
+
+
     path('api/student/profile/', StudentProfileAPIView.as_view(), name='student_profile'),
 
     path('api/courses/', CoursesAPIView.as_view(), name='courses_list'),
@@ -46,5 +52,8 @@ urlpatterns = [
     path('api/grades/<int:course_id>/', GradesAPIView.as_view(), name='grades'),
     path('api/grades/', GradesAPIViewPost.as_view(), name='grades-post'),
     path('api/grades/update/course/<int:course_id>/student/<int:student_id>/', GradesAPIViewUpdate.as_view(), name='grades_update'),
+
+    path('api/attendance/<int:course_id>/', AttendanceAPIView.as_view(), name='show_attendance'),
+    path('api/attendance/', AttendanceAPIView.as_view(), name='create_attendance'),
 ]
 

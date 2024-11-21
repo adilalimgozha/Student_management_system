@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from students.models import Student
 
 User = get_user_model()
 
@@ -9,7 +10,8 @@ class Course(models.Model):
     instructor = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'teacher'})
 
 class Enrollment(models.Model):
-    student = models.ManyToManyField(User, limit_choices_to={'role': 'student'})
+
+    student = models.ManyToManyField(Student, related_name='enrollments')
     course = models.ManyToManyField(Course)
 
 

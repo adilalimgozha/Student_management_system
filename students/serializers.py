@@ -3,13 +3,15 @@ from students.models import Student
 
 class StudentsSerializer(serializers.ModelSerializer):
 
-    username = serializers.CharField(source='student.username')  # Access username from related user
-    email = serializers.EmailField(source='student.email')  # Access email from related user
-    first_name = serializers.CharField(source='student.first_name')  # Access first name from related user
-    last_name = serializers.CharField(source='student.last_name')
+    username = serializers.CharField(source='student.username')  # Извлекаем имя пользователя через связь с CustomUser
+    email = serializers.EmailField(source='student.email')  # Извлекаем email через связь с CustomUser
+    first_name = serializers.CharField(source='student.first_name')  # Извлекаем имя через связь с CustomUser
+    last_name = serializers.CharField(source='student.last_name')  # Извлекаем фамилию через связь с CustomUser
+
+    
 
     class Meta:
-        model = Student
+        model = Student  # Используем модель Student
         fields = ('username', 'email', 'first_name', 'last_name', 'description')
 
     def update(self, instance, validated_data):

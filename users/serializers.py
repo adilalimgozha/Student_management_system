@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
+from students.models import Student
 
 User = get_user_model()
 
@@ -25,4 +26,10 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             email=validated_data['email'],
             role=role  # Устанавливаем роль, переданную в запросе
         )
+        if role == 'student':
+            student = Student.objects.create(
+                student=user
+            )
+            return student
+
         return user
