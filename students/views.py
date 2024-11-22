@@ -13,6 +13,7 @@ from .models import Student
 import django_filters
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
+from django.core.cache import cache
 
 class StudentsAPIListPagination(PageNumberPagination):
     page_size = 2
@@ -54,14 +55,27 @@ class StudentsAPIView(APIView):
     
 class StudentDetailView(APIView):
     def get(self, request, pk):
+        cache_key = f"student_{pk}"
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response({'cached student': cached_data}, status=status.HTTP_200_OK)
+
+
         student = Student.objects.get(pk=pk)
         serializer = StudentsSerializer(student)
-        return Response(serializer.data)
+        cache.set(cache_key, serializer.data, timeout=600)
+        return Response({'student': serializer.data}, status=status.HTTP_200_OK)
     
 class StudentProfileAPIView(APIView):
     permission_classes = [IsAuthenticated, IsStudentOrAdmin]
 
     def get(self, request):
+
+        cache_key = f"student_profile_{request.user.id}"
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response({'cached student': cached_data}, status=status.HTTP_200_OK)
+
         try:
             # Get the authenticated user
             student = Student.objects.get(student=request.user)
@@ -69,6 +83,8 @@ class StudentProfileAPIView(APIView):
             raise NotFound("Student profile not found")
         
         serializer = StudentsSerializer(student)
+        cache.set(cache_key, serializer.data, timeout=600)
+
         return Response({'student': serializer.data}, status=status.HTTP_200_OK)
     
     def put(self, request):
@@ -81,6 +97,10 @@ class StudentProfileAPIView(APIView):
         serializer = StudentsSerializer(student, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
+
+            cache_key = f"student_profile_{request.user.id}"
+            cache.delete(cache_key)
+
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
