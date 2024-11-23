@@ -1,0 +1,999 @@
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 8053
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+"POST /api/login/ HTTP/1.1" 200 8053
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+"POST /api/login/ HTTP/1.1" 200 8053
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+"POST /api/login/ HTTP/1.1" 200 8053
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+This is a test log message.
+Test log from shell.
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 8053
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+This is a test log message.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+"POST /api/login/ HTTP/1.1" 200 8056
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+"POST /api/login/ HTTP/1.1" 200 8053
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5592
+User registered: adm (ID: 14)
+User logged in: adm (ID: 14)
+"POST /api/register/ HTTP/1.1" 201 38
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\signals.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7549
+"POST /api/login/ HTTP/1.1" 200 8053
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7549
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7609
+This is a test log message.
+This is a test log message.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4585
+C:\Programming\Django\student_management_system\student_management_system\urls.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+This is a test log message.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\apps.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\request.py", line 421, in __getattr__
+    return getattr(_request, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\users\views.py", line 23, in post
+    logger.info(f'User registered: {request.username} (ID: {request.id})')
+                                    ^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\request.py", line 423, in __getattr__
+    return self.__getattribute__(attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Request' object has no attribute 'username'
+"POST /api/register/ HTTP/1.1" 500 106031
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+User registered: a (ID: 16)
+"POST /api/register/ HTTP/1.1" 201 38
+"GET /admin/ HTTP/1.1" 200 13018
+"GET /admin/users/customuser/ HTTP/1.1" 200 14788
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/ HTTP/1.1" 200 13018
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\users\views.py", line 35, in post
+    user = self.get_user(username)
+           ^^^^^^^^^^^^^
+AttributeError: 'CustomTokenObtainPairView' object has no attribute 'get_user'
+"POST /api/login/ HTTP/1.1" 500 100588
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+User logged out: TEACHER (ID: 9)
+"POST /api/logout/ HTTP/1.1" 205 0
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+User Adilek2003 (ID: 1) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/login/
+"POST /api/login/ HTTP/1.1" 400 7618
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Test WARNING log
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+User Adilek2003 (ID: 1) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Unauthorized: /api/courses/enrollment/
+"POST /api/courses/enrollment/ HTTP/1.1" 401 183
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 104, in delete
+    result = self.client.delete(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\client\default.py", line 375, in delete
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 148, in post
+    cache.delete(cache_key)
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\client\default.py", line 373, in delete
+    return client.delete(self.make_key(key, version=version, prefix=prefix))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\commands\core.py", line 1705, in delete
+    return self.execute_command("DEL", *names)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+"POST /api/courses/enrollment/ HTTP/1.1" 500 144190
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 104, in delete
+    result = self.client.delete(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\client\default.py", line 375, in delete
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 148, in post
+    cache.delete(cache_key)
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Programming\Django\myworld\Lib\site-packages\django_redis\client\default.py", line 373, in delete
+    return client.delete(self.make_key(key, version=version, prefix=prefix))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\commands\core.py", line 1705, in delete
+    return self.execute_command("DEL", *names)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\connection.py", line 1422, in get_connection
+    connection.connect()
+  File "C:\Programming\Django\myworld\Lib\site-packages\redis\connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+"POST /api/courses/enrollment/ HTTP/1.1" 500 144190
+Student students.Student.None enrolled to course courses.Course.None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {enrollment.student.username} enrolled to course {enrollment.course.name} successfully.')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'username'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98805
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/courses/enrollment/
+"POST /api/courses/enrollment/ HTTP/1.1" 401 183
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {enrollment.student_id} enrolled to course {enrollment.course_id} successfully.')
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Enrollment' object has no attribute 'student_id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98741
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Student None enrolled to course None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/courses/enrollment/
+"POST /api/courses/enrollment/ HTTP/1.1" 401 183
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {enrollment.student.id} enrolled to course {enrollment.course.id} successfully.')
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98741
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {enrollment.student.id} enrolled to course {enrollment.course.id} successfully.')
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98741
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {student_id} enrolled to course {enrollment.course.id} successfully.')
+                                                           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98781
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {student_id} enrolled to course {enrollment.course.id} successfully.')
+                                                           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98781
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Student None enrolled to course None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+Student None enrolled to course None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+Student None enrolled to course None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Unauthorized: /api/courses/enrollment/
+"GET /api/courses/enrollment/ HTTP/1.1" 401 5308
+"GET /admin/ HTTP/1.1" 200 13018
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17883
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/32/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17883
+"GET /admin/courses/enrollment/32/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/32/delete/ HTTP/1.1" 200 10803
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"POST /admin/courses/enrollment/32/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17829
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/31/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/31/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/31/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17600
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/30/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/30/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/30/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17371
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/29/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/29/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/29/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 17142
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/28/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/28/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/28/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 16913
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/27/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/27/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/27/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 16684
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/26/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/26/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/26/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 16455
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/25/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/25/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/25/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 16226
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/24/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/24/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/24/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 15997
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/23/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/23/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/23/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 15768
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/22/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/22/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/22/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 15539
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/21/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/21/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/21/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 15310
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/20/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/20/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/20/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 15081
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/19/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/19/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/19/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 14852
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/18/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/18/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/18/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 14623
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/17/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/17/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/17/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 14394
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/16/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/16/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/16/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 14165
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/15/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/15/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/15/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13936
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/14/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/14/delete/ HTTP/1.1" 200 10803
+"POST /admin/courses/enrollment/14/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13704
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/13/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/13/delete/ HTTP/1.1" 200 10802
+"POST /admin/courses/enrollment/13/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/5/change/ HTTP/1.1" 200 13790
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/5/delete/ HTTP/1.1" 200 10796
+"POST /admin/courses/enrollment/5/delete/ HTTP/1.1" 302 0
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13248
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/7/change/ HTTP/1.1" 200 13790
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/courses/enrollment/12/change/ HTTP/1.1" 200 13795
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Unauthorized: /api/courses/enrollment/
+"POST /api/courses/enrollment/ HTTP/1.1" 401 183
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/courses/enrollment/5/delete/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12928
+"GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+"GET /admin/courses/enrollment/5/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12928
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/courses/enrollment/13/delete/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/13/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/courses/enrollment/14/delete/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/14/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/courses/enrollment/15/delete/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/15/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12929
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13074
+"GET /admin/ HTTP/1.1" 200 12755
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Student None enrolled to course None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Student students.Student.None enrolled to course courses.Course.None successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/courses/enrollment/
+"POST /api/courses/enrollment/ HTTP/1.1" 401 183
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 7591
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Internal Server Error: /api/courses/enrollment/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\student_management_system\courses\views.py", line 150, in post
+    logger.info(f'Student {enrollment.student.id} enrolled to course successfully.')
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+"POST /api/courses/enrollment/ HTTP/1.1" 500 98695
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Student 4 enrolled to course 3 successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /admin/ HTTP/1.1" 200 12755
+"GET /admin/grades/grades/ HTTP/1.1" 200 12528
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/1/change/ HTTP/1.1" 200 16925
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/ HTTP/1.1" 200 12528
+"GET /admin/grades/grades/add/ HTTP/1.1" 200 16674
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/grades/grades/add/ HTTP/1.1" 302 0
+"GET /admin/grades/grades/ HTTP/1.1" 200 12954
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/add/ HTTP/1.1" 200 16674
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+"GET /admin/ HTTP/1.1" 200 12788
+Internal Server Error: /api/grades/update/course/1/student/1
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/grades/update/course/1/student/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/grades/update/course/1/student/1 HTTP/1.1" 500 75086
+Internal Server Error: /api/grades/update/course/1/student/1
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/grades/update/course/1/student/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/grades/update/course/1/student/1 HTTP/1.1" 500 75086
+Not Found: /api/grades/update/course/1/student/1/
+"PUT /api/grades/update/course/1/student/1/ HTTP/1.1" 404 56
+Not Found: /api/grades/update/course/1/student/2/
+"PUT /api/grades/update/course/1/student/2/ HTTP/1.1" 404 56
+Not Found: /api/grades/update/course/1/student/3/
+"PUT /api/grades/update/course/1/student/3/ HTTP/1.1" 404 56
+Not Found: /api/grades/update/course/1/student/4/
+"PUT /api/grades/update/course/1/student/4/ HTTP/1.1" 404 56
+Not Found: /api/grades/update/course/1/student/5/
+"PUT /api/grades/update/course/1/student/5/ HTTP/1.1" 404 56
+"GET /admin/ HTTP/1.1" 200 12788
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/6/change/ HTTP/1.1" 200 16925
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+"GET /admin/grades/grades/3/change/ HTTP/1.1" 200 16927
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+"GET /admin/grades/grades/3/change/ HTTP/1.1" 200 16927
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+"GET /admin/grades/grades/2/change/ HTTP/1.1" 200 16925
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/grades/grades/ HTTP/1.1" 200 12745
+Not Found: /api/grades/update/course/2/student/1/
+"PUT /api/grades/update/course/2/student/1/ HTTP/1.1" 404 56
+Updated grade of bror in 4 course, Grade: 555.00 successfully.
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 200 73
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/grades/update/course/2/student/2/
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 400 67
+Updated grade of 2 in 4 course, Grade: 100.00 successfully.
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 200 73
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/grades/update/course/2/student/2/
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 401 183
+"GET /admin/ HTTP/1.1" 200 12788
+"GET /admin/ HTTP/1.1" 200 12788
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13993
+"GET /admin/courses/enrollment/16/delete/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12962
+"GET /admin/courses/enrollment/16/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12962
+"GET /admin/courses/enrollment/ HTTP/1.1" 200 13993
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Updated grade of 2 in Course object (2) course, Grade: 190.00 successfully.
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 200 73
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+Updated grade of 2 in 2 course, Grade: 120.00 successfully.
+"PUT /api/grades/update/course/2/student/2/ HTTP/1.1" 200 73
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /admin/ HTTP/1.1" 200 12788
+"GET /admin/attendance/attendance/ HTTP/1.1" 200 12869
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/ HTTP/1.1" 200 12788
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Added attendance Student: 1 in Course: 1, Status: attend successfully.
+"POST /api/attendance/ HTTP/1.1" 201 40

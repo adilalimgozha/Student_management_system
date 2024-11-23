@@ -9,6 +9,9 @@ from users.permissions import IsTeacher, IsStudent, IsAdmin, IsTeacherOrAdmin
 from .serializers import GradesSerializer
 from rest_framework.exceptions import NotFound
 from .models import Grades
+import logging
+
+logger = logging.getLogger('user_actions')
 
 class GradesAPIView(APIView):
     permission_classes = [IsAuthenticated]
@@ -32,7 +35,10 @@ class GradesAPIViewUpdate(APIView):
         # Update the grade with partial data from the request
         serializer = GradesSerializer(grade, data=request.data, partial=True)
         if serializer.is_valid():
-            serializer.save()
+            grades = serializer.save()
+
+            logger.info(f'Updated grade of Student: {grades.student.id} in Course: {grades.course.id}, Grade: {grades.grade} successfully.')
+
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

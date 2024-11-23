@@ -9,6 +9,9 @@ from users.permissions import IsTeacher, IsStudent, IsAdmin, IsTeacherOrAdmin
 from .serializers import AttendanceSerializer
 from rest_framework.exceptions import NotFound
 from .models import Attendance
+import logging
+
+logger = logging.getLogger('user_actions')
 
 
 class AttendanceAPIView(APIView):
@@ -24,6 +27,9 @@ class AttendanceAPIView(APIView):
     def post(self, request):
         serializer = AttendanceSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            att = serializer.save()
+
+            logger.info(f'Added attendance Student: {att.student.id} in Course: {att.course.id}, Status: {att.status} successfully.')
+            
             return Response({"msg": "Attendance marked successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

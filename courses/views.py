@@ -13,6 +13,9 @@ from .models import Course, Enrollment
 import django_filters
 from django_filters.rest_framework import DjangoFilterBackend
 from django.core.cache import cache
+import logging
+
+logger = logging.getLogger('user_actions')
 
 class CoursesAPIListPagination(PageNumberPagination):
     page_size = 2
@@ -139,10 +142,14 @@ class CoursesAPIViewEnroll(APIView):
         instructor_id = request.GET.get('instructor', None)
         serializer = EnrollmentSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            enrollment = serializer.save()
 
             cache_key = f"courses_list_student_{student_id}_instructor_{instructor_id}"
             cache.delete(cache_key)
+
+            for student in enrollment.student.all():
+                for course in enrollment.course.all():
+                    logger.info(f'Student {student.id} enrolled to course {course.id} successfully.')
 
             return Response({"msg": "Student enrolled to the course successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
