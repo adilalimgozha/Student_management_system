@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'django_filters',
     'django_celery_beat',  
     'notifications',
+    'rest_framework_swagger',  # Swagger
+    'drf_yasg',                # Yet Another Swagger generator
 ]
 
 MIDDLEWARE = [

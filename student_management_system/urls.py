@@ -27,6 +27,19 @@ from students.views import StudentsAPIView, StudentProfileAPIView, StudentDetail
 from courses.views import CoursesAPIView, CoursesAPIViewEdit, CoursesAPIViewEnroll
 from grades.views import GradesAPIView, GradesAPIViewPost, GradesAPIViewUpdate
 from attendance.views import AttendanceAPIView
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+from rest_framework import permissions
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="My Project API",
+        default_version='v1',
+        description="API documentation for My Project",
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -55,5 +68,7 @@ urlpatterns = [
 
     path('api/attendance/<int:course_id>/', AttendanceAPIView.as_view(), name='show_attendance'),
     path('api/attendance/', AttendanceAPIView.as_view(), name='create_attendance'),
+
+    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
 

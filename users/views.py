@@ -10,6 +10,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 import logging
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.contrib.auth import get_user_model
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 
 User = get_user_model()
@@ -19,6 +21,10 @@ logger = logging.getLogger('user_actions')
 
 class UserRegisterView(APIView):
     permission_classes = [AllowAny]
+
+    @swagger_auto_schema(
+        request_body=UserRegisterSerializer  # Link to the serializer for the body
+    )
 
     def post(self, request):
         serializer = UserRegisterSerializer(data=request.data)

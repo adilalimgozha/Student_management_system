@@ -30,6 +30,6 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             student = Student.objects.create(
                 student=user
             )
-            return student
+
 
         return user
