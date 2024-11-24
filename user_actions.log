@@ -997,3 +997,255 @@ User TEACHER (ID: 9) logged in successfully.
 "POST /api/login/ HTTP/1.1" 200 7955
 Added attendance Student: 1 in Course: 1, Status: attend successfully.
 "POST /api/attendance/ HTTP/1.1" 201 40
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\__init__.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Not Found: /api/register/ [name='register'] api/login/
+"GET /api/register/%20[name='register']%20api/login/ HTTP/1.1" 404 4718
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\celery.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4585
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/attendance/attendance/ HTTP/1.1" 200 15074
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/attendance/attendance/1/change/ HTTP/1.1" 200 17405
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/attendance/attendance/ HTTP/1.1" 200 15074
+Added attendance Student: 2 in Course: 1, Status: absent successfully.
+"POST /api/attendance/ HTTP/1.1" 201 40
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/students/student/ HTTP/1.1" 200 14269
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/attendance/attendance/ HTTP/1.1" 200 15303
+"GET /admin/users/customuser/ HTTP/1.1" 200 16764
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Unauthorized: /api/attendance/
+"POST /api/attendance/ HTTP/1.1" 401 183
+"GET /admin/attendance/attendance/ HTTP/1.1" 200 15303
+"GET /admin/ HTTP/1.1" 200 15515
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Bad Request: /api/attendance/
+"POST /api/attendance/ HTTP/1.1" 400 57
+Added attendance Student: 5 in Course: 1, Status: absent successfully.
+"POST /api/attendance/ HTTP/1.1" 201 40
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/users/customuser/ HTTP/1.1" 200 16764
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/users/customuser/4/change/ HTTP/1.1" 200 27329
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/users/customuser/ HTTP/1.1" 200 16764
+"GET /admin/students/student/ HTTP/1.1" 200 14269
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+C:\Programming\Django\student_management_system\attendance\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/users/customuser/ HTTP/1.1" 200 16764
+"GET /admin/ HTTP/1.1" 200 15515
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/grades/1/
+"PUT /api/grades/1/ HTTP/1.1" 405 40
+"GET /api/grades/1/ HTTP/1.1" 200 84
+"POST /api/grades/ HTTP/1.1" 201 34
+"GET /api/grades/2/ HTTP/1.1" 200 379
+"GET /api/grades/2/ HTTP/1.1" 200 379
+"POST /api/grades/ HTTP/1.1" 201 34
+"GET /api/grades/2/ HTTP/1.1" 200 452
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/grades/2/
+"GET /api/grades/2/ HTTP/1.1" 401 183
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+"GET /api/grades/2/ HTTP/1.1" 200 452
+Method Not Allowed: /api/grades/2/
+"POST /api/grades/2/ HTTP/1.1" 405 41
+"POST /api/grades/ HTTP/1.1" 201 34
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\grades\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 7955
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7511
+Method Not Allowed: /api/grades/update/course/3/student/2/
+"POST /api/grades/update/course/3/student/2/ HTTP/1.1" 405 41
+Updated grade of Student: 2 in Course: 3, Grade: 68.00 successfully.
+"PUT /api/grades/update/course/3/student/2/ HTTP/1.1" 200 72
+"GET /api/grades/2/ HTTP/1.1" 200 452
+"GET /api/grades/3/ HTTP/1.1" 200 85
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+C:\Programming\Django\student_management_system\notifications\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/django_celery_beat/periodictask/ HTTP/1.1" 200 15673
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 12545
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/clockedschedule/ HTTP/1.1" 200 12543
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/intervalschedule/ HTTP/1.1" 200 12552
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/solarschedule/ HTTP/1.1" 200 12561
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/periodictask/ HTTP/1.1" 200 15673
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/intervalschedule/ HTTP/1.1" 200 12552
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 12545
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 12545
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/clockedschedule/ HTTP/1.1" 200 12543
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4534
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/django_celery_beat/clockedschedule/ HTTP/1.1" 200 12543
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 12545
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/intervalschedule/ HTTP/1.1" 200 12552
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/periodictask/ HTTP/1.1" 200 15673
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/solarschedule/ HTTP/1.1" 200 12561
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/django_celery_beat/periodictask/ HTTP/1.1" 200 15673
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\settings.py changed, reloading.
+Watching for file changes with StatReloader

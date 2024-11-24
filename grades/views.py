@@ -10,6 +10,7 @@ from .serializers import GradesSerializer
 from rest_framework.exceptions import NotFound
 from .models import Grades
 import logging
+from notifications.tasks import send_grade_notification, send_grade_updated_notification
 
 logger = logging.getLogger('user_actions')
 
@@ -39,6 +40,8 @@ class GradesAPIViewUpdate(APIView):
 
             logger.info(f'Updated grade of Student: {grades.student.id} in Course: {grades.course.id}, Grade: {grades.grade} successfully.')
 
+            send_grade_updated_notification.delay(grade.student.username, grade.student.email, grade.course.name)
+            
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -48,6 +51,8 @@ class GradesAPIViewPost(APIView):
     def post(self, request):
         serializer = GradesSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            grade = serializer.save()
+
+            send_grade_notification.delay(grade.student.username, grade.student.email, grade.course.name)
             return Response({"msg": "Grade added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

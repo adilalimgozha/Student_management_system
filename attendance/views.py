@@ -10,6 +10,7 @@ from .serializers import AttendanceSerializer
 from rest_framework.exceptions import NotFound
 from .models import Attendance
 import logging
+from notifications.tasks import send_attendance_reminder
 
 logger = logging.getLogger('user_actions')
 
@@ -28,6 +29,8 @@ class AttendanceAPIView(APIView):
         serializer = AttendanceSerializer(data=request.data)
         if serializer.is_valid():
             att = serializer.save()
+
+            send_attendance_reminder.delay(att.student.username, att.student.email)
 
             logger.info(f'Added attendance Student: {att.student.id} in Course: {att.course.id}, Status: {att.status} successfully.')
             
