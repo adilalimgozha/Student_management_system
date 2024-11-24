@@ -1527,3 +1527,584 @@ C:\Programming\Django\student_management_system\users\serializers.py changed, re
 Watching for file changes with StatReloader
 User registered: po (ID: 24)
 "POST /api/register/ HTTP/1.1" 201 38
+Not Found: /פגüרע
+"GET /%D1%84%D0%B2%D1%8C%D1%88%D1%82 HTTP/1.1" 404 4733
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /admin/students/student/ HTTP/1.1" 200 15725
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+User registered: pudge (ID: 25)
+"POST /api/register/ HTTP/1.1" 201 38
+"GET /admin/users/customuser/ HTTP/1.1" 200 18647
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/students/student/ HTTP/1.1" 200 15935
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/students/student/12/change/ HTTP/1.1" 200 15683
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/students/student/ HTTP/1.1" 200 15935
+"GET /admin/users/customuser/ HTTP/1.1" 200 18647
+"GET /admin/students/student/ HTTP/1.1" 200 15935
+"GET /admin/ HTTP/1.1" 200 15515
+"GET /docs/ HTTP/1.1" 200 2214
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 7816
+User registered: bibibi (ID: 26)
+"POST /api/register/ HTTP/1.1" 201 38
+Attempting to get user: bibibi
+User bibibi (ID: 26) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+Unauthorized: /api/courses/enrollment/
+"GET /api/courses/enrollment/ HTTP/1.1" 401 58
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2214
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not set
+"GET /docs/?format=openapi HTTP/1.1" 500 156069
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2214
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not str
+"GET /docs/?format=openapi HTTP/1.1" 500 156063
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2214
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not list
+"GET /docs/?format=openapi HTTP/1.1" 500 156075
+C:\Programming\Django\student_management_system\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2214
+"GET /docs/?format=openapi HTTP/1.1" 200 8108
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 8252
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+User registered: 123 (ID: 27)
+"POST /api/register/ HTTP/1.1" 201 38
+Attempting to get user: 123
+User 123 (ID: 27) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+Unauthorized: /api/logout/
+"POST /api/logout/ HTTP/1.1" 401 58
+Unauthorized: /api/logout/
+"POST /api/logout/ HTTP/1.1" 401 58
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 8253
+Attempting to get user: 123
+User 123 (ID: 27) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+Unauthorized: /api/logout/
+"POST /api/logout/ HTTP/1.1" 401 58
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/logout/
+"POST /api/logout/ HTTP/1.1" 401 58
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 8252
+Attempting to get user: 123
+User 123 (ID: 27) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+User logged out: 123 (ID: 27)
+"POST /api/logout/ HTTP/1.1" 205 0
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 8252
+Attempting to get user: 123
+User 123 (ID: 27) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+User logged out: 123 (ID: 27)
+"POST /api/logout/ HTTP/1.1" 205 17
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 8252
+Attempting to get user: 123
+User 123 (ID: 27) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 486
+User logged out: 123 (ID: 27)
+"POST /api/logout/ HTTP/1.1" 205 25
+C:\Programming\Django\student_management_system\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+"GET /docs/?format=openapi HTTP/1.1" 500 153744
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Programming\Django\myworld\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Programming\Django\myworld\Lib\site-packages\drf_yasg\inspectors\view.py", line 104, in _get_request_body_override
+    raise SwaggerGenerationError("request_body can only be applied to (" + ','.join(self.body_methods) +
+drf_yasg.errors.SwaggerGenerationError: request_body can only be applied to (PUT,PATCH,POST,DELETE); are you looking for query_serializer or manual_parameters?
+"GET /docs/?format=openapi HTTP/1.1" 500 153744
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 9246
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Attempting to get user: TEACHER
+User TEACHER (ID: 9) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+Unauthorized: /api/students/
+"GET /api/students/ HTTP/1.1" 401 58
+"GET /api/students/1/ HTTP/1.1" 200 131
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 63
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 63
+Attempting to get user: student333
+User student333 (ID: 7) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 9358
+Attempting to get user: student333
+User student333 (ID: 7) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+"GET /api/student/profile/ HTTP/1.1" 200 131
+"PUT /api/student/profile/ HTTP/1.1" 200 119
+"GET /api/student/profile/ HTTP/1.1" 200 131
+Forbidden: /api/students/
+"GET /api/students/ HTTP/1.1" 403 63
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+"GET /api/students/ HTTP/1.1" 200 317
+"GET /api/students/?username=stud HTTP/1.1" 200 271
+"GET /api/students/?username=st HTTP/1.1" 200 271
+"GET /api/students/?username=s HTTP/1.1" 200 295
+C:\Programming\Django\student_management_system\students\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 9358
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 11623
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+"GET /api/courses/ HTTP/1.1" 200 231
+"GET /api/courses/?instructor=9 HTTP/1.1" 200 237
+"GET /api/courses/?name=M HTTP/1.1" 200 117
+Bad Request: /api/courses/add/
+"POST /api/courses/add/ HTTP/1.1" 400 60
+"POST /api/courses/add/ HTTP/1.1" 201 35
+"GET /api/courses/?name=B HTTP/1.1" 200 112
+C:\Programming\Django\student_management_system\courses\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4665
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 11218
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+"GET /api/courses/ HTTP/1.1" 200 231
+C:\Programming\Django\student_management_system\student_management_system\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /docs/?format=openapi HTTP/1.1" 200 10782
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+Unauthorized: /api/courses/
+"GET /api/courses/ HTTP/1.1" 401 183
+Attempting to get user: ADMIN
+User ADMIN (ID: 8) logged in successfully.
+"POST /api/login/ HTTP/1.1" 200 483
+"GET /api/courses/ HTTP/1.1" 200 231
+"POST /api/courses/ HTTP/1.1" 201 35
+"GET /api/courses/ HTTP/1.1" 200 231
+"GET /api/courses/?name=L HTTP/1.1" 200 223
+"GET /api/courses/?name=LO HTTP/1.1" 200 157
+"PUT /api/courses/edit/1/ HTTP/1.1" 200 55
+"GET /api/courses/?name=LO HTTP/1.1" 200 157
+"GET /api/courses/ HTTP/1.1" 200 221
+"GET /api/courses/enrollment/ HTTP/1.1" 200 549
+"GET /api/courses/enrollment/?student=1 HTTP/1.1" 200 493
+Student 7 enrolled to course 1 successfully.
+"POST /api/courses/enrollment/ HTTP/1.1" 201 53
+"GET /api/courses/enrollment/ HTTP/1.1" 200 549
+"GET /api/courses/enrollment/?student=7 HTTP/1.1" 200 251
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\student_management_system\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4529
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 10485
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Programming\Django\student_management_system\attendance\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /docs/ HTTP/1.1" 200 2229
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+"GET /docs/?format=openapi HTTP/1.1" 200 11212

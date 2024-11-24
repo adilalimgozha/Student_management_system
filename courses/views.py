@@ -14,6 +14,18 @@ import django_filters
 from django_filters.rest_framework import DjangoFilterBackend
 from django.core.cache import cache
 import logging
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
+
+
+swagger_jwt_auth = openapi.Parameter(
+    'Authorization',  # Parameter name in the header
+    in_=openapi.IN_HEADER,
+    description='JWT access token',
+    type=openapi.TYPE_STRING,
+    required=True,
+)
 
 logger = logging.getLogger('user_actions')
 
@@ -52,6 +64,9 @@ class CoursesAPIView(APIView):
     filter_backends = (DjangoFilterBackend,)
     filterset_class = CoursesFilter 
 
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+    )
     def get(self, request):
 
         courses = Course.objects.all()
@@ -69,10 +84,24 @@ class CoursesAPIView(APIView):
         
         return Response({'students': CoursesSerializer(courses, many=True).data}, status=status.HTTP_200_OK)
     
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        request_body=CoursesSerializer  # Link to the serializer for the body
+    )
+    def post(self, request):
+        serializer = CoursesSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"msg": "Course added successfully"}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
 
 class CoursesAPIViewEdit(APIView):
     permission_classes = [IsAuthenticated, IsTeacherOrAdmin]
-    
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        request_body=CoursesSerializer  # Link to the serializer for the body
+    )
     def put(self, request, course_id):
         try:
             # Get the authenticated student profile
@@ -86,13 +115,6 @@ class CoursesAPIViewEdit(APIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    def post(self, request):
-        serializer = CoursesSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response({"msg": "Course added successfully"}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
 
 class CoursesAPIViewEnroll(APIView):
     permission_classes = [IsAuthenticated, IsTeacherOrAdmin]
@@ -100,7 +122,9 @@ class CoursesAPIViewEnroll(APIView):
     filter_backends = (DjangoFilterBackend,)
     filterset_class = EnrollmentsFilter 
 
-
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+    )
     def get(self, request):
 
         student_id = request.GET.get('student', None)
@@ -137,6 +161,10 @@ class CoursesAPIViewEnroll(APIView):
         
         return Response(response_data, status=status.HTTP_200_OK)
 
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        request_body=EnrollmentSerializer  # Link to the serializer for the body
+    )
     def post(self, request):
         student_id = request.GET.get('student', None)
         instructor_id = request.GET.get('instructor', None)

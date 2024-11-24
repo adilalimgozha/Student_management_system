@@ -14,6 +14,16 @@ import django_filters
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 from django.core.cache import cache
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
+swagger_jwt_auth = openapi.Parameter(
+    'Authorization',  # Parameter name in the header
+    in_=openapi.IN_HEADER,
+    description='JWT access token',
+    type=openapi.TYPE_STRING,
+    required=True,
+)
 
 class StudentsAPIListPagination(PageNumberPagination):
     page_size = 2
@@ -37,6 +47,10 @@ class StudentsAPIView(APIView):
     filter_backends = (DjangoFilterBackend,)
     filterset_class = StudentFilter 
 
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+    )
+
     def get(self, request):
         students = Student.objects.all()
 
@@ -54,6 +68,8 @@ class StudentsAPIView(APIView):
         return Response({'students': StudentsSerializer(students, many=True).data}, status=status.HTTP_200_OK)
     
 class StudentDetailView(APIView):
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],)
     def get(self, request, pk):
         cache_key = f"student_{pk}"
         cached_data = cache.get(cache_key)
@@ -69,6 +85,9 @@ class StudentDetailView(APIView):
 class StudentProfileAPIView(APIView):
     permission_classes = [IsAuthenticated, IsStudentOrAdmin]
 
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        )
     def get(self, request):
 
         cache_key = f"student_profile_{request.user.id}"
@@ -87,7 +106,12 @@ class StudentProfileAPIView(APIView):
 
         return Response({'student': serializer.data}, status=status.HTTP_200_OK)
     
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        request_body=StudentsSerializer  # Link to the serializer for the body
+    )
     def put(self, request):
+        
         try:
             # Get the authenticated student profile
             student = Student.objects.get(student=request.user)

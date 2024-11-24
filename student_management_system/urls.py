@@ -26,16 +26,17 @@ from users.views import LogoutView, CustomTokenObtainPairView
 from students.views import StudentsAPIView, StudentProfileAPIView, StudentDetailView
 from courses.views import CoursesAPIView, CoursesAPIViewEdit, CoursesAPIViewEnroll
 from grades.views import GradesAPIView, GradesAPIViewPost, GradesAPIViewUpdate
-from attendance.views import AttendanceAPIView
+from attendance.views import AttendanceAPIView, AttendanceAPIViewCreate
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
 
+
 schema_view = get_schema_view(
     openapi.Info(
-        title="My Project API",
+        title="Student Management System API",
         default_version='v1',
-        description="API documentation for My Project",
+        description="API documentation for Student Management System",
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
@@ -58,7 +59,6 @@ urlpatterns = [
     path('api/student/profile/', StudentProfileAPIView.as_view(), name='student_profile'),
 
     path('api/courses/', CoursesAPIView.as_view(), name='courses_list'),
-    path('api/courses/add/', CoursesAPIViewEdit.as_view(), name='courses_add'),
     path('api/courses/edit/<int:course_id>/', CoursesAPIViewEdit.as_view(), name='courses_edit'),
     path('api/courses/enrollment/', CoursesAPIViewEnroll.as_view(), name='courses_enroll'),
 
@@ -67,7 +67,7 @@ urlpatterns = [
     path('api/grades/update/course/<int:course_id>/student/<int:student_id>/', GradesAPIViewUpdate.as_view(), name='grades_update'),
 
     path('api/attendance/<int:course_id>/', AttendanceAPIView.as_view(), name='show_attendance'),
-    path('api/attendance/', AttendanceAPIView.as_view(), name='create_attendance'),
+    path('api/attendance/', AttendanceAPIViewCreate.as_view(), name='create_attendance'),
 
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]

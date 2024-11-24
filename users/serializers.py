@@ -33,3 +33,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
 
         return user
+    
+
+class LogoutSerializer(serializers.Serializer):
+    refresh_token = serializers.CharField(required=True)

@@ -5,7 +5,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from .serializers import UserRegisterSerializer
+from .serializers import UserRegisterSerializer, LogoutSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 import logging
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -18,6 +18,14 @@ User = get_user_model()
 
 
 logger = logging.getLogger('user_actions')
+
+swagger_jwt_auth = openapi.Parameter(
+    'Authorization',  # Parameter name in the header
+    in_=openapi.IN_HEADER,
+    description='JWT access token',
+    type=openapi.TYPE_STRING,
+    required=True,
+)
 
 class UserRegisterView(APIView):
     permission_classes = [AllowAny]
@@ -56,6 +64,11 @@ class CustomTokenObtainPairView(TokenObtainPairView):
     
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        manual_parameters=[swagger_jwt_auth],
+        request_body=LogoutSerializer  # Link to the serializer for the body
+    )
 
     def post(self, request):
         try:
